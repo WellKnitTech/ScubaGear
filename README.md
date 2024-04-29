@@ -91,8 +91,15 @@ In the event of an unsuccessful download, users can manually download the OPA ex
 1. Go to the [OPA download site](https://www.openpolicyagent.org/docs/latest/#running-opa).
 2. Look for the latest OPA version (Currently v0.63.0) for ScubaGear and select the corresponding version on top left of the website.
 3. Navigate to the menu on left side of the screen: Introduction - Running OPA - Download OPA
+<<<<<<< HEAD
 4. Locate the downloaded file, add the file to your desired location (default is ~\\.scubagear\Tools), open PowerShell, and use the following command to check the downloaded OPA version:
 
+=======
+4. Locate the downloaded file, add the file to your desired location. The default locations is `~\\.scubagear\Tools`.
+5. If adding the OPA executable to `~\\.scubagear\Tools` still does not work. Try adding the OPA executable to the current directory you are running ScubaGear e.g. `$PWD`.
+6. If that still doesn't work specify the path to the directory containing the OPA executable using the `-OPAPath` parameter.
+7. You can use the following command to check the downloaded OPA version in the directory that the OPA executable was placed.
+>>>>>>> 0a429675 (readme update)
 ```powershell
 .\opa_windows_amd64.exe version
 ```
